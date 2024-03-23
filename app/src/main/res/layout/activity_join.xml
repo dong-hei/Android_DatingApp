@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/auth_image"
+    tools:context=".auth.JoinActivity">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/imgArea"
+        android:src="@drawable/profile_img" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:hint="email"
+          android:id="@+id/emailArea"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:layout_margin="10dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        >
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:hint="password Check"
+          android:id="@+id/passwordArea"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:layout_margin="10dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        >
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:hint="nickname"
+          android:id="@+id/nicknameArea"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:layout_margin="10dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="1"
+        >
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:hint="gender(M/W)"
+          android:id="@+id/genderArea"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:layout_margin="10dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        >
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:hint="region"
+          android:id="@+id/regionArea"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:layout_margin="10dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        >
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:hint="age"
+          android:layout_width="match_parent"
+          android:id="@+id/ageArea"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:layout_margin="10dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:text="register"
+        android:id="@+id/registerBtn"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:background="@color/mainColor"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+  </ScrollView>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
