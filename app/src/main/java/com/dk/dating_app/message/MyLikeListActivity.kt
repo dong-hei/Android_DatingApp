@@ -1,18 +1,16 @@
 package com.dk.dating_app.message
 
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.ListView
 import android.widget.Toast
-import com.dk.dating_app.R
 import com.dk.dating_app.R.*
 import com.dk.dating_app.auth.UserDataModel
 import com.dk.dating_app.message.fcm.NotiModel
 import com.dk.dating_app.message.fcm.PushNotification
 import com.dk.dating_app.message.fcm.RetrofitInstance
-import com.dk.dating_app.utils.FirebaseAuthUtils
-import com.dk.dating_app.utils.FirebaseRef
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
@@ -22,7 +20,7 @@ import kotlinx.coroutines.launch
 
 /**
  * 내가 좋아요한 사람이 나를 좋아요 한 리스트
- * 
+ *
  */
 class MyLikeListActivity : AppCompatActivity() {
 
@@ -45,7 +43,7 @@ class MyLikeListActivity : AppCompatActivity() {
 
         //내가 좋아요한 리스트
         getMyLikeList()
-        
+
         //전체 유저 중 내가 좋아요한 사람들 가져와서 나와 매칭이 되었는지 확인
         userListView.setOnItemClickListener{ parents, view, position, id ->
 
@@ -147,4 +145,3 @@ class MyLikeListActivity : AppCompatActivity() {
 
     }
 }
-
