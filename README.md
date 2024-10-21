@@ -1,2 +1,2 @@
 - 데이팅앱
-- 사용한기술 : 코틀린, slide, android-jetpack
+- 사용한기술 : Kotlin, slide, android-jetpack
