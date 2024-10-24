@@ -1,2 +1,2 @@
-- 안드로이드를 이용한 데이팅앱
+- 안드로이드를 이용한 데이팅앱 !
 - 사용한기술 : Kotlin, slide, android-jetpack
